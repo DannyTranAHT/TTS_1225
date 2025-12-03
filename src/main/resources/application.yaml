@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: todo-project
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todo
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#  redis:
+#    host: localhost
+#    port: 6379
+#
+#  kafka:
+#    bootstrap-servers: localhost:9092
+
+jwt:
+  secret: dev-secret-trungnp-122025
+  expiration-ms: 3600000
